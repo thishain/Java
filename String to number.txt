@@ -1,0 +1,32 @@
+ String st = "https://www.youtube.com/watch?v=r4D6iK7Ym99";
+        char[] str = st.toCharArray();
+        String[] num = new String[20];
+        int[] numInt = new int[20];
+        int k=0;
+ 
+        
+        for(char c : str){
+            if(Character.isDigit(c)) {  
+                num[k] = String.valueOf(c);
+                numInt[k] = Integer.parseInt(num[k]);
+                k++;
+               
+            }
+        }
+        
+     
+        for(int i=0;i<k;i++) {  
+            System.out.print(numInt[i]);
+            if(i<k) {
+                System.out.print(",");
+            }
+            if(i>=k) {
+                System.out.println("");          
+            }
+        
+        
+            
+        }
+        int resul =0;
+        resul = (numInt[0] + numInt[2]) * numInt[4];
+        System.out.println("O resultado da soma e multiplicação dos numeros é: "+ resul);
