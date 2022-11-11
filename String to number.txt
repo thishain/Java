@@ -1,5 +1,4 @@
  String st = "https://www.youtube.com/watch?v=r4D6iK7Ym99";
-        char[] str = st.toCharArray();
         String[] num = new String[20];
         int[] numInt = new int[20];
         int k=0;
